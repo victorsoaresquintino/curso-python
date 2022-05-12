@@ -1,3 +1,5 @@
+
+
 # n1=int(input('Digite um valor: '))
 # n2=int(input('Digite outro numero: '))
 # r=n1+n2
@@ -7,6 +9,14 @@
 # print(x.isascii())
 
 ################## EXERCÍCIO-03 #####################
+
+#n1=int(input('Digite um numero: '))
+#n2=int(input('Digite outro numero'))
+
+#r=n1+n2
+
+#print('O rezaultado de' ,r, '+' ,n1, 'é' ,n2,)
+
 
 n1=int(input('Digite um numero: '))
 n2=int(input('Digite outro numero'))
