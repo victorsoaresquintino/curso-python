@@ -45,7 +45,7 @@
 # nome=input('Qual o seu nome?')
 # print('Prazer em te conhecer {:=>20}'.format(nome))
 
-####################################################
+########################################################################################################################
 
 n1=int(input('Um valor: '))
 n2=int(input('Outro numero: '))
@@ -95,9 +95,9 @@ print('O dobro:{}, o triplo:{},  e a  raiz:{}.'.format((x*2), (x*3), x** (1/2)))
 print(' '*1)
 
 m=float(input('Digite um valor em metro(os) que vc queira converte em centimetra e milimetros: '))
-c=m*100
-mi=m*1000
-print('O valor: {}, convertido em centimetros é :{} e milimetros :{}.'.format(m, c, mi))
+cm=m*100
+mm=m*1000
+print('O valor: {}m, convertido em centimetros é :{:.0f}cm e milimetros :{:.0f}mm.'.format(m, cm, mm))
 
 ##################### 04
 print(' '*1)
@@ -141,27 +141,39 @@ print(' '*1)
 
 a=float(input('Digite a altura da parede: '))
 l=float(input('Digite a largura da parede: '))
-print('A aria dessa parede é de: {} metros-quadrados, e serão utilisados {} Litros de tinta para pintala'.format(a*l, a*l*2))
+print('A aria dessa parede é de: {}m² (metros-quadrados), e serão utilisados {} Litros de tinta para pintala'.format(a*l, a*l/2))
 
 ##################### 07
 print(' '*1)
 
 v=float(input('Digite o preço do produto: '))
-print('O produto custa R$:{}, com desconto ficara R$:{}'.format(v, v-(v*0.05)))
+print('O produto custa R$:{}, com desconto ficara R$:{}'.format(v, v-(v*5)/100))
 
 ##################### 08
 print(' '*1)
 
 s=float(input('Digite o valor do salario: '))
-print('O salario R$:{} com 15% de almento sera de R$:{}.'.format(s, s+(s*0.15)))
+print('O salario R$:{} com 15% de almento sera de R$:{}.'.format(s, s+(s*15)/100))
 
+##################### 09
+print(' '*1)
 
+r1=float(input('Digite uma note de um aluno que vc queira saber a sua média: '))
+r2=float(input('Digite outra nota: '))
+print('A média entre {} e {} é igual a {:.2f}'.format(r1, r2, (r1+r2)/2))
 
+##################### 10
+print(' '*1)
 
+c=float(input('Informe a temperatura em °C: '))
+print('A temperatura de {}°C correstonde a {:.2f}°F!'.format(c, (9*c)/5+32))
 
+#################### 11
+print(' '*1)
 
-
-
+km=float(input('Digite a quantidade de kilometros precorridos pelo veiculo: '))
+dias=int(input('Digite quantos dias o carro foi ultilizado: '))
+print('O carro precorreu {}KM = R$:{},(valor por KM R$:0,15). Foi ultilizado por {} Dia(as) = R$:{:.2f}, (valor por Dia R$:60,00). Total:R$:{}.'.format(km, km*0.15, dias, dias*60, (km*0.15)+(dias*60)))
 
 
 
